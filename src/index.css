@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply m-0 bg-[#EBD3BB];
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Paw simgelerini rastgele ve seyrek şekilde dağıtma */
+.bg-paws-random {
+  background-image: url('/paw2.png'), url('/paw2.png'), url('/paw2.png');
+  background-repeat: no-repeat;
+  background-size: 400px 400px, 500px 500px, 300px 300px;
+  background-position: 10% 20%, 70% 60%, 50% 80%;
+  background-blend-mode: lighten;
+  /* opacity: 0.3; Daha az belirginlik için opacity */
+}
+
+/* Hero kısmında büyük paw simgesi */
+.bg-paws-hero {
+  background-image: url('/paw2.png');
+  background-repeat: no-repeat;
+  background-size: 500px 500px; /* Hero bölümünde büyük boyut */
+  background-position: center;
+  opacity: 0.2; /* Daha düşük belirginlik */
+}
